@@ -1,8 +1,8 @@
 {
-  "name": "download-git-repo",
-  "version": "1.0.2",
+  "name": "stonehenge-git-repo",
+  "version": "1.0.3",
   "license": "MIT",
-  "repository": "git://github.com/flipxfx/download-git-repo",
+  "repository": "https://github.com/PepperYan/download-git-repo",
   "description": "Download and extract a git repository (GitHub, GitLab, Bitbucket) from node.",
   "keywords": [
     "download",
