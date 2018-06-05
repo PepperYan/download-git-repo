@@ -65,6 +65,28 @@ download('https://mygitlab.com:flipxfx/download-git-repo-fixture#my-branch', 'te
 })
 ```
 
+### Direct
+Using http download from direct url.
+```javascript
+download('direct:https://gitlab.com/flipxfx/download-git-repo-fixture/repository/archive.zip', 'test/tmp', function (err) {
+  console.log(err ? 'Error' : 'Success')
+})
+```
+
+Using git clone from direct url at master.
+```javascript
+download('direct:https://gitlab.com/flipxfx/download-git-repo-fixture.git', 'test/tmp', { clone: true }, function (err) {
+  console.log(err ? 'Error' : 'Success')
+})
+```
+
+Using git clone from direct url at my-branch.
+```javascript
+download('direct:https://gitlab.com/flipxfx/download-git-repo-fixture.git#my-branch', 'test/tmp', { clone: true }, function (err) {
+  console.log(err ? 'Error' : 'Success')
+})
+```
+
 ## Thanks
 
 To [ianstormtaylor/download-github-repo](https://github.com/ianstormtaylor/download-github-repo) for the head start.
